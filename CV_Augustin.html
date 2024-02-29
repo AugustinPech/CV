@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Présentation de développeur: Augustin Pech">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>CV - Augustin Pech</title>
+</head>
+
+<body class="d-flex flex-column justify-content-between align-items-stretch">
+
+  <header id="header">
+    <nav class="navbar navbar-expand-md">
+       <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../img/logoAAJA2.svg" alt="Logo AAJA">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../pages/team.html">Notre équipe</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../catalogue.html">Boutique</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Les CVs de notre équipe
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="andrea.html">Andrea Thouvenot</a></li>
+                <li><a class="dropdown-item" href="axel.html">Axel Poty</a></li>
+                <li><a class="dropdown-item" href="jonathan.html">Jonathan Luscap</a></li>
+                <li><a class="dropdown-item" href="augustin.html">Augustin Pech</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="../contact.html" class="btn btn-light">Contactez nous</a>
+            <a href="../intranet.html" class="btn btn-primary ml-2">Sign in</a>
+          </div>
+          <!-- search bar is not a feature yet
+                                <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <pre class="mermaid">
+      gitGraph
+        commit id:"id"
+        commit type:REVERSE tag: "Initialisation"
+        branch develop
+        commit
+          branch feature
+            commit
+            commit
+            commit
+            commit
+            checkout develop
+            branch fix
+            commit
+            merge develop
+            commit
+            checkout develop
+            merge fix
+            checkout feature
+            merge develop
+            commit
+            checkout develop
+          merge feature
+          merge main
+          checkout main
+          merge develop tag: "v1.0"
+  </pre>
+  <main class="container">
+    <div class="d-flex flex-row justify-content-between my-2">
+      <div class="d-flex flex-column justify-content-end align-items-start">
+        <div class="border border-primary px-5 py-1">
+          <h1 class="text-primary">AdminSys Devops</h1>
+        </div>
+        <p> PECH Augustin</p>
+      </div>
+      <div class=" w-25 float-end">
+        <img class="img-fluid col-10  rounded" id="IDPic" src="../../img/Augustin.webp" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="border-bottom border-primary text-primary">Formation</h2>
+      <ul class="list-unstyled">
+        <li><b>2020 -
+            <script>document.write(new Date().getFullYear());</script>
+          </b> : Autoformation, Openclassroom / Youtube</li>
+        <li><b>2021-2022</b> : DU-SIG-AD, UGA-CERMOSEM</li>
+        <li><b>2009 - 2015</b> : Licence - Master 1 - Master 2 - STU spé Planétologie, Université Paris Saclay</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2 class="border-bottom border-primary text-primary">Expériences</h2>
+      <table class="table table-striped table-bordered table-hover">
+        <thead class="table-primary">
+          <tr>
+            <th class="col-2">Période</th>
+            <th class="col-2">Poste</th>
+            <th>Définition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>2015 - 2020</th>
+            <th>Géomaticien, <div class="fw-normal">Freelance</div>
+            </th>
+            <th class="fw-normal">Réalisation de cartes et/ou de supports de travail dans l’environnement QGIS pour des
+              projets personnels
+              et associatifs.</th>
+          </tr>
+          <tr>
+            <th>2021 - 2023</th>
+            <th>Géotechnicien, <div class="fw-normal">ALIOS Ingénierie - VALENCE (26)</div>
+            </th>
+            <th class="fw-normal">
+              </thclass>Technicien dans un bureau d'étude en géotechnique mes missions sont : <ul>
+                <li>La création de supports numériques de travail ;</li>
+                <li>Produire des rapports à destination des experts d'assurance, maîtres d'ouvrages,... ;</li>
+                <li>R&D de systèmes pour l’optimisation des méthodes de travail ;</li>
+                <li>Amélioration des processus de l’entreprise à travers la création de modèle de rapport ;</li>
+                <li>Recherche documentaire sur des bâtiments ou des structures pour des projets de travaux.</li>
+              </ul>
+            </th>
+          </tr>
+          <tr>
+            <th>2015 - 2023</th>
+            <th>Enseignant, <div class="fw-normal">Education nationale</div>
+            </th>
+            <th class="fw-normal">J'ai enseigné les SVT, les Mathématiques, les SPC, la BPH et leurs équivalents dans la
+              nouvelle formule du
+              BAC <ul>
+                <li>Réalisation de cours et de support pédagogiques créatifs en présentiel ou distanciel ;</li>
+                <li>Adaptation aux publics d'âges et d'origines sociales différents.</li>
+              </ul>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <div class="col-12 col-md-6  px-4">
+        <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
+        <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
+          <div>
+            <div class="d-flex flex-row justify-content-between">QGIS/ ArcGIS <img class="col-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/QGIS_logo_new.svg" alt=""></div>
+          </div>
+          <div>
+            <div class="d-flex flex-row justify-content-between">SQL/ PostGIS <img class="col-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+                alt=""></div>
+          </div>
+          <div>
+            <div class="d-flex flex-row justify-content-between">Python/ SciLab <img class="col-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
+                alt=""></div>
+          </div>
+          <div>
+            <div class="d-flex flex-row justify-content-between">AutoCAD/ Adobe Illustrator<img class="col-1"
+                src="https://i.pinimg.com/originals/58/6b/be/586bbe06de2d9896b8ef4dda71caa13c.png" alt=""></div>
+          </div>
+          <div>
+            <div class="d-flex flex-row justify-content-between">Excel & pack office<img class="col-1"
+                src="data:image/png;base64,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"
+                alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6  px-4">
+        <h2 class=" border-bottom border-primary text-primary">Hobby</h2>
+        <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
+          <div class="small">Bricollage : thermo-électricité & autonomie énergétique</div>
+          <div class="small">Création et test de jeux de société // jeux de rôle</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="border-bottom border-primary text-primary">Réalisations</h2>
+      <table class="table table-striped table-bordered table-hover">
+        <thead class="table-primary">
+          <tr>
+            <th class="col-2">Période</th>
+            <th>Contexte</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="container-fluid text-white" id="footer">
+    <h2 style="text-align: center;">Contactez nous</h2>
+    <div class="text-center">
+      <ul class="list-unstyled">
+        <li>
+          Par mail :<button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">contact@aaja.com</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="text-dark" class="modal-title" id="exampleModalLabel">Nouveau message à </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="text-dark" for="recipient-name" class="col-form-label">Destinataire:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+
+                    </div>
+                    <div class="mb-3">
+                      <label class="text-dark" for="message-text" class="col-form-label"
+                        class="text-dark">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Envoyer le message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <li>
+          Par téléphone : <a href="tel:+33666666666" class="text-dark">06.66.66.66.66</a>
+        </li>
+        <li>
+          <a class="btn btn-outline-dark mt-3" id="contact" role="button" href="../contact.html">Formulaire de
+            contact</a>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="text-center">© 2023 -
+      <script>document.write(new Date().getFullYear());</script> AAJA s.a.s. All Rights Reserved
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
