@@ -1,4 +1,4 @@
-
+let skills=[]
 class Item {
     container
     title
@@ -17,6 +17,7 @@ class Skill {
         this.title=title
         this.description=description
         this.image=imgPath
+        skills.push(this)
         cardElement(this, this.container)
     }
 }
