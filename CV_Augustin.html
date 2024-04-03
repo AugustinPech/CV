@@ -8,6 +8,7 @@
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   </script>
+  <link rel="stylesheet" href="/CV/css/card.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>CV - Augustin Pech</title>
@@ -15,11 +16,11 @@
 
 <body class="d-flex flex-column justify-content-between align-items-stretch">
 
-  <header id="header">
+  <header class="bg-primary text-white-50" id="header">
     <nav class="navbar navbar-expand-md">
        <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">
-          <img src="../../img/logoAAJA2.svg" alt="Logo AAJA">
+        <a class="navbar-brand" href="/CV/CV_Augustin.html">
+          <img  src="/CV/img/Vector.svg" class="ms-4" style="height: 3vh">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,72 +29,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="../../pages/team.html">Notre équipe</a>
-            </li>
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="../catalogue.html">Boutique</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Les CVs de notre équipe
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="andrea.html">Andrea Thouvenot</a></li>
-                <li><a class="dropdown-item" href="axel.html">Axel Poty</a></li>
-                <li><a class="dropdown-item" href="jonathan.html">Jonathan Luscap</a></li>
-                <li><a class="dropdown-item" href="augustin.html">Augustin Pech</a></li>
-              </ul>
+              <a class="nav-link active" aria-current="page" href="/CV/CV_Augustin.html">Accueil</a>
             </li>
           </ul>
           <div class="d-flex gap-2">
-            <a href="../contact.html" class="btn btn-light">Contactez nous</a>
-            <a href="../intranet.html" class="btn btn-primary ml-2">Sign in</a>
+            <a href="/CV/contact.html" class="btn btn-light">Contactez moi</a>
           </div>
-          <!-- search bar is not a feature yet
-                                <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form> -->
         </div>
       </div>
     </nav>
   </header>
-  <pre class="mermaid">
-      gitGraph
-        commit id:"id"
-        commit type:REVERSE tag: "Initialisation"
-        branch develop
-        commit
-          branch feature
-            commit
-            commit
-            commit
-            commit
-            checkout develop
-            branch fix
-            commit
-            merge develop
-            commit
-            checkout develop
-            merge fix
-            checkout feature
-            merge develop
-            commit
-            checkout develop
-          merge feature
-          merge main
-          checkout main
-          merge develop tag: "v1.0"
-  </pre>
-  <main class="container">
-    <div class="d-flex flex-row justify-content-between my-2">
+
+  <main class="container my-2">
+    <div class="d-flex flex-row justify-content-between">
       <div class="d-flex flex-column justify-content-end align-items-start">
         <div class="border border-primary px-5 py-1">
           <h1 class="text-primary">AdminSys Devops</h1>
@@ -101,7 +49,7 @@
         <p> PECH Augustin</p>
       </div>
       <div class=" w-25 float-end">
-        <img class="img-fluid col-10  rounded" id="IDPic" src="../../img/Augustin.webp" alt="">
+        <img class="img-fluid col-10  rounded" id="IDPic" src="/CV/img/Augustin.webp" alt="">
       </div>
     </div>
     <div class="container">
@@ -163,9 +111,13 @@
       </table>
     </div>
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <div class="col-12 col-md-6  px-4">
+      <div class="col-12  px-4" id="">
         <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
         <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
+          <div>
+            <div class="d-flex flex-row justify-content-between">HTML / CSS / JS <img class="col-1"
+                src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt=""></div>
+          </div>
           <div>
             <div class="d-flex flex-row justify-content-between">QGIS/ ArcGIS <img class="col-1"
                 src="https://upload.wikimedia.org/wikipedia/commons/9/91/QGIS_logo_new.svg" alt=""></div>
@@ -191,13 +143,10 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6  px-4">
-        <h2 class=" border-bottom border-primary text-primary">Hobby</h2>
-        <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
-          <div class="small">Bricollage : thermo-électricité & autonomie énergétique</div>
-          <div class="small">Création et test de jeux de société // jeux de rôle</div>
-        </div>
-      </div>
+
+    </div>
+    <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
+    <div class="d-flex flex-row flew-wrap col-12  px-4" id="skillsContainer">
     </div>
     <div class="container">
       <h2 class="border-bottom border-primary text-primary">Réalisations</h2>
@@ -228,64 +177,27 @@
         </tbody>
       </table>
     </div>
+    <div class="col-12 px-4">
+      <h2 class=" border-bottom border-primary text-primary">Hobby</h2>
+      <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
+        <div class="small">Bricollage : thermo-électricité & autonomie énergétique</div>
+        <div class="small">Création et test de jeux de société // jeux de rôle</div>
+      </div>
+    </div>
   </main>
 
-  <footer class="container-fluid text-white" id="footer">
-    <h2 style="text-align: center;">Contactez nous</h2>
-    <div class="text-center">
-      <ul class="list-unstyled">
-        <li>
-          Par mail :<button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo">contact@aaja.com</button>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="text-dark" class="modal-title" id="exampleModalLabel">Nouveau message à </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label class="text-dark" for="recipient-name" class="col-form-label">Destinataire:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-
-                    </div>
-                    <div class="mb-3">
-                      <label class="text-dark" for="message-text" class="col-form-label"
-                        class="text-dark">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Envoyer le message</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        <li>
-          Par téléphone : <a href="tel:+33666666666" class="text-dark">06.66.66.66.66</a>
-        </li>
-        <li>
-          <a class="btn btn-outline-dark mt-3" id="contact" role="button" href="../contact.html">Formulaire de
-            contact</a>
-        </li>
-      </ul>
-    </div>
-    <br>
-    <div class="text-center">© 2023 -
-      <script>document.write(new Date().getFullYear());</script> AAJA s.a.s. All Rights Reserved
+  <footer class="container-fluid text-white bg-primary" id="footer">
+     <div class="text-center">2023 -
+      <script>document.write(new Date().getFullYear());</script>
     </div>
   </footer>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
+<script src="/CV/js/cardElement.js"></script>
+<script src="/CV/js/skills.js"></script>
+<script src="/CV/js/achivments.js"></script>
 
 </html>
