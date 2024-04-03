@@ -1,10 +1,8 @@
 /* card stuff */
 #catalogContainer > div.card {
     background-color: rgb(255, 255, 255);
-    box-shadow: 1px 10px 5px 5px rgba(255, 148, 76, 0.397);
     margin: 5% 1% 10% 1%;
     border-radius: 6%;
-    min-height: 400px;
     text-decoration: none;
 }
 img.imgPath {
@@ -18,8 +16,13 @@ div.bottomDiv {
     text-align: justify;
 }
 h3.title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: rgb(255, 115, 0);
     font-family: sans-serif;
+}
+
+div.topDiv {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5% 5% 0% 0% ;
 }

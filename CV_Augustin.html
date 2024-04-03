@@ -7,22 +7,22 @@
   <meta name="description" content="Présentation de développeur: Augustin Pech">
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  </script>
+    </script>
   <link rel="stylesheet" href="/CV/css/card.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>CV - Augustin Pech</title>
 </head>
 
 <body class="d-flex flex-column justify-content-between align-items-stretch">
-
+  
   <header class="bg-primary text-white-50" id="header">
     <nav class="navbar navbar-expand-md">
        <div class="container-fluid">
-        <a class="navbar-brand" href="/CV/CV_Augustin.html">
-          <img  src="/CV/img/Vector.svg" class="ms-4" style="height: 3vh">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         <a class="navbar-brand" href="/CV/CV_Augustin.html">
+           <img  src="/CV/img/Vector.svg" class="ms-4" style="height: 3vh">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +39,7 @@
       </div>
     </nav>
   </header>
-
+  
   <main class="container my-2">
     <div class="d-flex flex-row justify-content-between">
       <div class="d-flex flex-column justify-content-end align-items-start">
@@ -55,12 +55,19 @@
     <div class="container">
       <h2 class="border-bottom border-primary text-primary">Formation</h2>
       <ul class="list-unstyled">
+        <li><b>2023-2025</b> : Formation Dev-Ops, Campus Numérique de Valence</li>
         <li><b>2020 -
-            <script>document.write(new Date().getFullYear());</script>
-          </b> : Autoformation, Openclassroom / Youtube</li>
+          <script>document.write(new Date().getFullYear());</script>
+        </b> : Autoformation, Openclassroom / Youtube</li>
         <li><b>2021-2022</b> : DU-SIG-AD, UGA-CERMOSEM</li>
         <li><b>2009 - 2015</b> : Licence - Master 1 - Master 2 - STU spé Planétologie, Université Paris Saclay</li>
       </ul>
+    </div>
+    <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
+    <div class="d-flex flex-row flex-wrap col-12  px-4" id="skillsContainer">
+      <div id="IDESkillsContainer"></div>
+      <div id="frontSkillsContainer"></div>
+      <div id="backSkillsContainer"></div>
     </div>
     <div class="container">
       <h2 class="border-bottom border-primary text-primary">Expériences</h2>
@@ -110,44 +117,7 @@
         </tbody>
       </table>
     </div>
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <div class="col-12  px-4" id="">
-        <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
-        <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
-          <div>
-            <div class="d-flex flex-row justify-content-between">HTML / CSS / JS <img class="col-1"
-                src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt=""></div>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-between">QGIS/ ArcGIS <img class="col-1"
-                src="https://upload.wikimedia.org/wikipedia/commons/9/91/QGIS_logo_new.svg" alt=""></div>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-between">SQL/ PostGIS <img class="col-1"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
-                alt=""></div>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-between">Python/ SciLab <img class="col-1"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
-                alt=""></div>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-between">AutoCAD/ Adobe Illustrator<img class="col-1"
-                src="https://i.pinimg.com/originals/58/6b/be/586bbe06de2d9896b8ef4dda71caa13c.png" alt=""></div>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-between">Excel & pack office<img class="col-1"
-                src="data:image/png;base64,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"
-                alt=""></div>
-          </div>
-        </div>
-      </div>
 
-    </div>
-    <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
-    <div class="d-flex flex-row flew-wrap col-12  px-4" id="skillsContainer">
-    </div>
     <div class="container">
       <h2 class="border-bottom border-primary text-primary">Réalisations</h2>
       <table class="table table-striped table-bordered table-hover">

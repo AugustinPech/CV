@@ -9,10 +9,12 @@ function newChild(block, className, htmlType, object) {
             break
         case "img" :
             newChild.src=values[keys.findIndex(item => item==className)]
-            newChild.style = "width:100%"
+            newChild.style = "max-height:100%; max-width:60%"
             break
         default :
-            newChild.textContent=values[keys.findIndex(item => item==className)]
+        if(values[keys.findIndex(item => item==className)]!=null){
+            newChild.innerHTML=values[keys.findIndex(item => item==className)]
+        }
     }
     
     newChild.className=className
@@ -21,16 +23,17 @@ function newChild(block, className, htmlType, object) {
 
 function cardElement(object, parentBlock) {
     let newBlock = parentBlock.appendChild(document.createElement("div"))
-    newBlock.setAttribute('class', 'card d-flex flex-column m-1')
+    newBlock.setAttribute('class', 'card d-flex flex-column m-1 col-3')
     newBlock.style="width:200px"
     let values = Object.values(object)
     let keys = Object.keys(object)
-    let divTop= newChild(newBlock, "imgPath", "img", object)
-    divTop.src=values[keys.findIndex(item => item=="image")]
-
+    let divTop= newChild(newBlock, "imgPath", "div", object)
+    let divImg= newChild(divTop, "imgPath", "img", object)
+    divImg.src=values[keys.findIndex(item => item=="image")]
+    divTop.className+=" topDiv d-flex flex-column justify-content-center h-50 align-items-center"
     let strStyle ="background-image: url('" + values[keys.findIndex(item => item=="image")] +"');background-size: cover;"
     let divBottom= newChild(newBlock, "bottomDiv", "div", object)
-    divBottom.className+= " d-flex flex-column"
+    divBottom.className+= " d-flex flex-column align-items-center"
     
     newChild(divBottom, 'title', "h3", object)
     newChild(divBottom, 'description', "div", object)
