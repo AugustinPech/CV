@@ -1,23 +1,24 @@
 /* card stuff */
 #catalogContainer > div.card {
-    background-color: rgb(255, 255, 255);
+    background-color: #0d6efd;
     margin: 5% 1% 10% 1%;
     border-radius: 6%;
     text-decoration: none;
 }
 img.imgPath {
+    object-fit: scale-down;
     background-color: rgb(240, 240, 240);
     border-radius: 5% 5% 0% 0% ;
-    width: 150px;
 }
 div.bottomDiv {
+    font-size: 14px;
     padding:0 5% 5% 5%;
-    color: gray;
-    text-align: justify;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 h3.title {
     font-size: 18px;
-    font-weight: bold;
+    text-align:center;
     color: rgb(255, 115, 0);
     font-family: sans-serif;
 }
@@ -26,3 +27,58 @@ div.topDiv {
     background-color: rgb(240, 240, 240);
     border-radius: 5% 5% 0% 0% ;
 }
+
+div.shadowOnHover {
+    z-index:1;
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+}
+div.shadowOnHover:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    border-style: inset;
+    border-color: rgba(255, 255, 255, 0.24);
+    box-shadow:10px 5px 5px rgba(255, 255, 255, 0.24);
+
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
