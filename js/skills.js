@@ -277,5 +277,4 @@ let exemple =
         ]
     }
 
-console.log(skills)
 skills.forEach((item) => new Skill(item))

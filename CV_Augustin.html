@@ -33,7 +33,9 @@
             </li>
           </ul>
           <div class="d-flex gap-2">
-            <a href="/CV/contact.html" class="btn btn-light">Contactez moi</a>
+            <button id="contactBTN" onclick="contactMe()" class="btn btn-light">
+              Contactez moi
+            </button>
           </div>
         </div>
       </div>
@@ -42,16 +44,16 @@
   
   <main class="container my-2">
     <div class="d-flex flex-row justify-content-between">
-      <div class=" d-flex flex-column justify-content-end align-items-start">
-        <div class="d-flex flex-column">
-          <div class="border border-primary  py-1">
+      <div class="w-100 d-flex flex-column justify-content-end align-items-start">
+        <div class="d-flex flex-column w-100">
+          <div class="d-flex flex-column align-items-center border border-primary w-100 px-4 py-1">
             <h1 class="text-primary">AdminSys Devops</h1>
           </div>
           <div>
             PECH Augustin
           </div>
         </div>
-        <div class="">
+        <div class="w-100 ">
           <h2 class="border-bottom border-primary text-primary">Formation</h2>
           
           <div><b>2023-2025</b> : Formation Dev-Ops, Campus Numérique de Valence</div>
@@ -63,12 +65,12 @@
           
         </div>
       </div>
-      <div class=" w-25 float-end">
+      <div class="mx-4 h-100 w-25 float-end">
         <img class="img-fluid col-10  rounded" id="IDPic" src="/CV/img/Augustin.webp" alt="">
       </div>
     </div>
     <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
-    <div class="d-flex flex-row justify-content-center flex-wrap col-12  px-4" id="skillsContainer">
+    <div class="d-flex flex-row justify-content-center flex-wrap col-12 " id="skillsContainer">
     </div>
     <div class="container">
       <h2 class="border-bottom border-primary text-primary">Expériences</h2>
@@ -82,29 +84,29 @@
         </thead>
         <tbody>
           <tr>
-            <th>2015 - 2020</th>
-            <th>Géomaticien, <div class="fw-normal">Freelance</div>
-            </th>
-            <th class="fw-normal">Réalisation de cartes et/ou de supports de travail dans l’environnement QGIS pour des
-              projets personnels
-              et associatifs.</th>
-          </tr>
-          <tr>
             <th>2021 - 2023</th>
             <th>Géotechnicien, <div class="fw-normal">ALIOS Ingénierie - VALENCE (26)</div>
             </th>
             <th class="fw-normal">
-              </thclass>Technicien dans un bureau d'étude en géotechnique mes missions sont : <ul>
-                <li>La création de supports numériques de travail ;</li>
-                <li>Produire des rapports à destination des experts d'assurance, maîtres d'ouvrages,... ;</li>
-                <li>R&D de systèmes pour l’optimisation des méthodes de travail ;</li>
-                <li>Amélioration des processus de l’entreprise à travers la création de modèle de rapport ;</li>
-                <li>Recherche documentaire sur des bâtiments ou des structures pour des projets de travaux.</li>
-              </ul>
-            </th>
+            </thclass>Technicien dans un bureau d'étude en géotechnique mes missions sont : <ul>
+              <li>La création de supports numériques de travail ;</li>
+              <li>Produire des rapports à destination des experts d'assurance, maîtres d'ouvrages,... ;</li>
+              <li>R&D de systèmes pour l’optimisation des méthodes de travail ;</li>
+              <li>Amélioration des processus de l’entreprise à travers la création de modèle de rapport ;</li>
+              <li>Recherche documentaire sur des bâtiments ou des structures pour des projets de travaux.</li>
+            </ul>
+          </th>
+        </tr>
+        <tr>
+          <th>2015 - 2023</th>
+          <th>Géomaticien, <div class="fw-normal">Freelance</div>
+          </th>
+          <th class="fw-normal">Réalisation de cartes et/ou de supports de travail dans l’environnement QGIS pour des
+            projets personnels
+            et associatifs.</th>
           </tr>
           <tr>
-            <th>2015 - 2023</th>
+            <th>2015 - 2021</th>
             <th>Enseignant, <div class="fw-normal">Education nationale</div>
             </th>
             <th class="fw-normal">J'ai enseigné les SVT, les Mathématiques, les SPC, la BPH et leurs équivalents dans la
@@ -115,14 +117,14 @@
               </ul>
             </th>
           </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="container">
-      <h2 class="border-bottom border-primary text-primary">Réalisations</h2>
-      <table class="table table-striped table-bordered table-hover">
-        <thead class="table-primary">
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="container">
+    <h2 class="border-bottom border-primary text-primary">Réalisations</h2>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-primary">
           <tr>
             <th class="col-2">Période</th>
             <th>Contexte</th>
@@ -161,6 +163,10 @@
      <div class="text-center">2023 -
       <script>document.write(new Date().getFullYear());</script>
     </div>
+    <div id="contactForm">
+      <a class="btn btn-primary my-2" href="mailto:votreadresse@mail.fr">Contactez-moi par mail</a>
+      <a class="btn btn-primary  my-2" href="tel:01 01 01 01 01">Contactez-moi par téléphone</a>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -170,5 +176,6 @@
 <script src="/CV/js/cardElement.js"></script>
 <script src="/CV/js/skills.js"></script>
 <script src="/CV/js/achivments.js"></script>
+<script src="/CV/js/contact.js"></script>
 
 </html>
