@@ -82,7 +82,7 @@ function shadowOnHover(block){
 function cardElement(object, parentBlock) {
     let newBlock = parentBlock.appendChild(document.createElement("div"))
     newBlock.setAttribute('class', 'card d-flex flex-column m-1 col-2')
-    newBlock.style="width: 150px; height: 250px"
+    newBlock.style="width: 150px; height: 200px"
     let values = Object.values(object)
     let keys = Object.keys(object)
     let divTop= newChild(newBlock, "imgPath", "div", object)
