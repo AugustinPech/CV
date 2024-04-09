@@ -23,7 +23,7 @@ let skills=[
         imgPath: "https://www.svgrepo.com/show/374173/vscode3.svg",
         tags:["IDE", "DevSkill"],
         ressources : [
-            "https://augustinpech.github.io/CV/CV_Augustin.html",
+            "https://augustinpech.github.io/CV/",
             "https://augustinpech.github.io/JS_formation_campus/"
         ]
     },
@@ -45,7 +45,7 @@ let skills=[
             },
             {
                 description:"Mon CV interactif sur GitHub",
-                link:["https://augustinpech.github.io/CV/CV_Augustin.html"]
+                link:["https://augustinpech.github.io/CV/"]
             },
             {
                 description:"Un petit catalogue d'applications en JS",
@@ -168,7 +168,7 @@ let skills=[
         ressources : [
             {
                 description:"mon CV interactif sur GitHub",
-                link:["https://augustinpech.github.io/CV/CV_Augustin.html"]
+                link:["https://augustinpech.github.io/CV/"]
             },
         ]
     },
@@ -239,7 +239,7 @@ let skills=[
         ressources : [
             {
                 description:"Mon CV interactif sur GitHub",
-                link:["https://augustinpech.github.io/CV/CV_Augustin.html"]
+                link:["https://augustinpech.github.io/CV/"]
             },
         ]
     },
@@ -253,7 +253,7 @@ let skills=[
         ressources : [
             {
                 description:"Mon CV interactif sur GitHub",
-                link:["https://augustinpech.github.io/CV/CV_Augustin.html"]
+                link:["https://augustinpech.github.io/CV/"]
             },
         ]
     },
@@ -272,7 +272,7 @@ let exemple =
             },
             {
                 description:"mon CV interactif sur GitHub",
-                link:["https://augustinpech.github.io/CV/CV_Augustin.html"]
+                link:["https://augustinpech.github.io/CV/"]
             },
         ]
     }
