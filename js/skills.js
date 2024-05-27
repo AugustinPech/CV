@@ -174,8 +174,10 @@ let skills=[
     },
     {// "Python",
         title:"Python",
-        description:"Analyse et traitement de données",
+        description:"TDD, POO & Data science",
         longDesc:[
+            "Programmation Orientée Objet",
+            "Test Driven Development",
             "Analyse de données d'expériences scientifiques",
             "Création de documents et figures pour des publications",
             "Traitement de données",
@@ -184,6 +186,10 @@ let skills=[
         imgPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
         tags:["FrontEnd", "BackEnd","Algo", "DataBase", "SIG", "Documentation","NetWork","DevSkill"],
         ressources : [
+            {
+                description:"Mon profil sur GitHub",
+                link:["https://github.com/AugustinPech/python-campus"]
+            },
         ]
     },
     {// "UX/UI avec Figma"
@@ -254,6 +260,24 @@ let skills=[
             {
                 description:"Mon CV interactif sur GitHub",
                 link:["https://augustinpech.github.io/CV/"]
+            },
+        ]
+    },
+    {// Java
+        title:"Java",
+        description: "Programmation Orientée Objet",
+        longDesc:[
+            "Programmation Orientée Objet",
+            "Utilisation de la JavaDoc",
+            "Utilisation de Maven",
+            "Test Driven Development",
+        ],
+        imgPath:"https://cdn.worldvectorlogo.com/logos/java.svg",
+        tags:["IDE", "BackEnd","Algo", "DataBase", "Documentation", "DevSkill"],
+        ressources : [
+            {
+                description:"Mon rendu de cours sur Java",
+                link:["https://github.com/AugustinPech/Java_cours_campus"]
             },
         ]
     },
