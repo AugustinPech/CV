@@ -16,6 +16,31 @@ class Skill {
     }
 }
 let skills=[
+        {// KVM
+    title:"KVM tools",
+    description:"Utilisation de VMs pour simuler un serveur distant",
+    longDesc:["Configuration de l'interface réseau de VMs pour simuler un serveur distant","Configuration de Debian12 avec un preseed.cfg"],
+    imgPath:"https://www.sparks-formation.com/wp-content/uploads/2020/10/logo-kvm.png",
+    ressources : [
+        {
+            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
+                link:["https://github.com/AugustinPech/KVM_auto-deploy"]
+            },
+        ]
+    },
+        {// "docker"
+    title:"Docker",
+    description:"Utilisation de conteneurs pour déployer des services",
+    longDesc:["Configuration de conteneurs pour déployer des services"],
+    imgPath: "https://blog.lecacheur.com/wp-content/uploads/2014/10/docker.png",
+    tags:["BackEnd", "Infra", "NetWork", "DevSkill"],
+    ressources : [
+        {
+            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
+                link:["https://github.com/AugustinPech/Docker_tuto"]
+            },
+        ]
+    },
     { // VSCode
         title : "VSCode",
         description:"Maîtrise de l'IDE VSCode",
@@ -278,32 +303,6 @@ let skills=[
             {
                 description:"Mon rendu de cours sur Java",
                 link:["https://github.com/AugustinPech/Java_cours_campus"]
-            },
-        ]
-    },
-    {// KVM
-    title:"KVM tools",
-    description:"Utilisation de VMs pour simuler un serveur distant",
-    longDesc:["Configuration de l'interface réseau de VMs pour simuler un serveur distant","Configuration de Debian12 avec un preseed.cfg"],
-    imgPath: "https://www.google.com/imgres?q=kvm&imgurl=https%3A%2F%2Fwww.it-connect.fr%2Fwp-content-itc%2Fuploads%2F2014%2F01%2Fkvm.png&imgrefurl=https%3A%2F%2Fwww.it-connect.fr%2Fkvm-outil-de-virtualisation%2F&docid=yDXttm-4wzCICM&tbnid=H6tYonwkumSASM&vet=12ahUKEwj7_duZotGGAxUlSaQEHXkUCcAQM3oECD4QAA..i&w=1999&h=633&hcb=2&ved=2ahUKEwj7_duZotGGAxUlSaQEHXkUCcAQM3oECD4QAA",
-    tags:["BackEnd", "DataBase", "NetWork", "DevSkill"],
-    ressources : [
-        {
-            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
-                link:["https://github.com/AugustinPech/KVM_auto-deploy"]
-            },
-        ]
-    },
-    {// "docker"
-    title:"Docker",
-    description:"Utilisation de conteneurs pour déployer des services",
-    longDesc:["Configuration de conteneurs pour déployer des services"],
-    imgPath: "https://blog.lecacheur.com/wp-content/uploads/2014/10/docker.png",
-    tags:["BackEnd", "Infra", "NetWork", "DevSkill"],
-    ressources : [
-        {
-            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
-                link:["https://github.com/AugustinPech/Docker_tuto"]
             },
         ]
     },
