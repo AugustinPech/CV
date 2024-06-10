@@ -187,7 +187,7 @@ let skills=[
         tags:["FrontEnd", "BackEnd","Algo", "DataBase", "SIG", "Documentation","NetWork","DevSkill"],
         ressources : [
             {
-                description:"Mon profil sur GitHub",
+                description:"Un script d'automatisation de déploiement de serveur avec Bottle & PythonAnywhere",
                 link:["https://github.com/AugustinPech/python-campus"]
             },
         ]
@@ -281,14 +281,40 @@ let skills=[
             },
         ]
     },
+    {// KVM
+    title:"KVM tools",
+    description:"Utilisation de VMs pour simuler un serveur distant",
+    longDesc:["Configuration de l'interface réseau de VMs pour simuler un serveur distant","Configuration de Debian12 avec un preseed.cfg"],
+    imgPath: "https://www.google.com/imgres?q=kvm&imgurl=https%3A%2F%2Fwww.it-connect.fr%2Fwp-content-itc%2Fuploads%2F2014%2F01%2Fkvm.png&imgrefurl=https%3A%2F%2Fwww.it-connect.fr%2Fkvm-outil-de-virtualisation%2F&docid=yDXttm-4wzCICM&tbnid=H6tYonwkumSASM&vet=12ahUKEwj7_duZotGGAxUlSaQEHXkUCcAQM3oECD4QAA..i&w=1999&h=633&hcb=2&ved=2ahUKEwj7_duZotGGAxUlSaQEHXkUCcAQM3oECD4QAA",
+    tags:["BackEnd", "DataBase", "NetWork", "DevSkill"],
+    ressources : [
+        {
+            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
+                link:["https://github.com/AugustinPech/KVM_auto-deploy"]
+            },
+        ]
+    },
+    {// "docker"
+    title:"Docker",
+    description:"Utilisation de conteneurs pour déployer des services",
+    longDesc:["Configuration de conteneurs pour déployer des services"],
+    imgPath: "https://blog.lecacheur.com/wp-content/uploads/2014/10/docker.png",
+    tags:["BackEnd", "Infra", "NetWork", "DevSkill"],
+    ressources : [
+        {
+            description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
+                link:["https://github.com/AugustinPech/Docker_tuto"]
+            },
+        ]
+    },
 ]
-let exemple =
+exemple =
 {
     title:"title",
     description:"description courte",
     longDesc:["Ullamco est culpa irure ea id aute aute proident eiusmod aliquip ea incididunt velit. Amet dolore qui non fugiat. Ipsum pariatur anim minim id ullamco ut. Aliquip velit enim do minim."],
     imgPath: "",
-    tags:["IDE", "FrontEnd", "BackEnd","Algo", "DataBase", "SIG", "Documentation","NetWork", "DevSkill"],
+    tags:["IDE", "Infra", "FrontEnd", "BackEnd","Algo", "DataBase", "SIG", "Documentation","NetWork", "DevSkill"],
     ressources : [
         {
             description:"mon profil sur GitHub",
