@@ -41,6 +41,39 @@ let skills=[
             },
         ]
     },
+        { // "Virtual Box tools",
+        title:"Virtual Box tools",
+        description:"Utilisation de VMs pour simuler un serveur distant",
+        longDesc:[
+            "Configuration de l'interface réseau de VMs pour simuler un serveur distant",
+            "Utilisation de VMs pour documenter un processus pour un client"
+        ],
+        imgPath: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png",
+        tags:["IDE", "BackEnd","NetWork", "DevSkill"],
+        ressources : [
+            {
+                description:"Différentes documentations autour du thème 'Système et réseau' ainsi que la réalisation des exercices lors de ma formation.",
+                link:["https://github.com/AugustinPech/VirtualBox-Documentation"]
+            },
+        ]
+    },
+        {// "JavaScript",
+        title:"JavaScript",
+        description:"Dynamiser des éléments d'un page Web",
+        longDesc:[
+            "Développement d'applications web simples",
+            "Appelle d'API",
+            "Affichage dynamique"
+        ],
+        imgPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png",
+        tags:["FrontEnd", "Algo", "DevSkill"],
+        ressources : [
+            {
+                description:"Catalog d'applications simples développées en JS vanilla",
+                link:["https://augustinpech.github.io/JS_formation_campus/"]
+            },
+        ]
+    },
     { // VSCode
         title : "VSCode",
         description:"Maîtrise de l'IDE VSCode",
@@ -116,22 +149,6 @@ let skills=[
             },
             ]
     },
-    { // "Virtual Box tools",
-        title:"Virtual Box tools",
-        description:"Utilisation de VMs pour simuler un serveur distant",
-        longDesc:[
-            "Configuration de l'interface réseau de VMs pour simuler un serveur distant",
-            "Utilisation de VMs pour documenter un processus pour un client"
-        ],
-        imgPath: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png",
-        tags:["IDE", "BackEnd","NetWork", "DevSkill"],
-        ressources : [
-            {
-                description:"Différentes documentations autour du thème 'Système et réseau' ainsi que la réalisation des exercices lors de ma formation.",
-                link:["https://github.com/AugustinPech/VirtualBox-Documentation"]
-            },
-        ]
-    },
     { // "MD & Mermaid",
         title:"MD & Mermaid",
         description:"Documentation des projets en MarkDown & mermaid",
@@ -148,23 +165,6 @@ let skills=[
             {
                 description:"Documentation de l'installation d'un logiciel pro de recherche en biologie.",
                 link:["https://github.com/AugustinPech/VirtualBox-Documentation/blob/main/notice_deepbgc_install.md"]
-            },
-        ]
-    },
-    {// "JavaScript",
-        title:"JavaScript",
-        description:"Dynamiser des éléments d'un page Web",
-        longDesc:[
-            "Développement d'applications web simples",
-            "Appelle d'API",
-            "Affichage dynamique"
-        ],
-        imgPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png",
-        tags:["FrontEnd", "Algo", "DevSkill"],
-        ressources : [
-            {
-                description:"Catalog d'applications simples développées en JS vanilla",
-                link:["https://augustinpech.github.io/JS_formation_campus/"]
             },
         ]
     },
