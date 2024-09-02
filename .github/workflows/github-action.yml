@@ -1,6 +1,7 @@
 name: GitHub Action for CV deployment
 run-name: Linting and deploying the CV to GitHub Pages
-on: [push]
+on:
+  [push]
   # push:
   #   branches:
   #     - main
@@ -15,3 +16,17 @@ jobs:
         with:
           prettier_options: --write **/*.{js,md}
           only_changed: True
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Build CV
+        run: npm run build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Deploy CV on server
+        run: echo "to do"
