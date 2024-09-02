@@ -16,6 +16,19 @@ class Skill {
     }
 }
 let skills=[
+    {// Ansible
+    title:"Ansible",
+    description:"Automatisation de déploiement sur des serveurs distants",
+    longDesc:["Ansible est un langage de script pour automatiser les exécutions de tâches sur des serveurs distants. Particulièrement efficace pour la mise en place de PaaS ou de SaaS."],
+    imgPath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZqdh8uZdUtuh3Dpq5Fi7OPf3K0XCNUtxLw&s",
+    tags:["Infra", "FrontEnd", "BackEnd", "DevSkill", "SaaS", "PaaS", "DevOps"],
+    ressources : [
+            {
+                description:"Ma bibliothèque de playbook Ansible",
+                link:["https://github.com/AugustinPech/Ansible_devOps"]
+            },
+        ]
+    },
         {// KVM
     title:"KVM tools",
     description:"Utilisation de VMs pour simuler un serveur distant",
@@ -33,7 +46,7 @@ let skills=[
     description:"Utilisation de conteneurs pour déployer des services",
     longDesc:["Configuration de conteneurs pour déployer des services"],
     imgPath: "https://blog.lecacheur.com/wp-content/uploads/2014/10/docker.png",
-    tags:["BackEnd", "Infra", "NetWork", "DevSkill"],
+    tags:["BackEnd", "Infra", "NetWork", "DevSkill", "IaaS", "DevOps"],
     ressources : [
         {
             description:"mes scripts pour l'installation d'un serveur avec Apache2, MariaDB et PHP8.2",
@@ -49,7 +62,7 @@ let skills=[
             "Utilisation de VMs pour documenter un processus pour un client"
         ],
         imgPath: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png",
-        tags:["IDE", "BackEnd","NetWork", "DevSkill"],
+        tags:["IDE", "BackEnd","NetWork", "DevSkill", "IaaS", "DevOps"],
         ressources : [
             {
                 description:"Différentes documentations autour du thème 'Système et réseau' ainsi que la réalisation des exercices lors de ma formation.",
@@ -147,7 +160,10 @@ let skills=[
                     "https://github.com/AugustinPech/Cours-php"
                 ]
             },
-            ]
+            {
+                description: "Un rendu pour un test technique suite à un entretien",
+                link:["https://github.com/AugustinPech/technical_test_GroupGPA"],
+            },
     },
     { // "MD & Mermaid",
         title:"MD & Mermaid",
