@@ -1,10 +1,9 @@
 name: GitHub Action for CV deployment
 run-name: Linting and deploying the CV to GitHub Pages
-on:
-  push:
-    branches:
-      - develop
-      - main
+on: [push]
+  # push:
+  #   branches:
+  #     - main
 jobs:
   prettier:
     runs-on: ubuntu-latest
