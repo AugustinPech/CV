@@ -1,181 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Présentation de développeur: Augustin Pech">
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Présentation de développeur: Augustin Pech"
+    />
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
     </script>
-  <link rel="stylesheet" href="/CV/css/card.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>CV - Augustin Pech</title>
-</head>
+    <link rel="stylesheet" href="/CV/css/card.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>CV - Augustin Pech</title>
+  </head>
 
-<body class="d-flex flex-column justify-content-between align-items-stretch">
-  
-  <header class="bg-primary" id="header">
-    <nav class="navbar navbar-expand-md ">
-       <div class="container-fluid">
-         <a class="navbar-brand" href="/CV/">
-           <img alt="" src="/CV/img/Vector.svg" class="mx-4 mb-1" style="height: 3vh">
+  <body class="d-flex flex-column justify-content-between align-items-stretch">
+    <header class="bg-primary" id="header">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/CV/">
+            <img
+              alt=""
+              src="/CV/img/Vector.svg"
+              class="mx-4 mb-1"
+              style="height: 3vh"
+            />
           </a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="/CV/">Accueil</a>
-            </li>
-          </ul>
-          <!-- <div class="d-flex gap-2">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="/CV/"
+                  >Accueil</a
+                >
+              </li>
+            </ul>
+            <!-- <div class="d-flex gap-2">
             <button id="contactBTN" onclick="contactMe()" class="btn btn-light">
               Contactez moi
             </button>
           </div> -->
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <main class="container my-2">
-    <div class="d-flex flex-row justify-content-between align-items-stretch ">
-      <div class="w-100 d-flex flex-column justify-content-end align-items-start">
-        <div class="d-flex flex-column w-100">
-          <div class="d-flex flex-column align-items-center border border-primary w-100 px-4 py-1">
-            <h1 class="text-primary">Devops</h1>
-          </div>
-          <div>
-            PECH Augustin
           </div>
         </div>
-      </div>
-      <div class="mx-4 w-md-50 w-25 float-end">
-        <img class="img-fluid rounded" id="IDPic" src="/CV/img/Augustin.webp" alt="">
-      </div>
-    </div>
-    <div class="w-100 ">
-      <h2 class="border-bottom border-primary text-primary">Formation</h2>
-      
-      <div><b>2023-2025</b> : Formation Dev-Ops, Campus Numérique de Valence</div>
-      <div><b>2020 -
-        <script>document.write(new Date().getFullYear());</script>
-      </b> : Autoformation, Openclassroom / Youtube</div>
-      <div><b>2021-2022</b> : DU-SIG-AD, UGA-CERMOSEM</div>
-      <div><b>2009 - 2015</b> : Licence - Master 1 - Master 2 - STU spé Planétologie, Université Paris Saclay</div>
-      
-    </div>
-    <h2 class=" border-bottom border-primary text-primary">Compétences</h2>
-    <div class="d-flex flex-row justify-content-center flex-wrap col-12 " id="skillsContainer">
-    </div>
-    <div class="container">
-      <h2 class="border-bottom border-primary text-primary">Expériences</h2>
-      <table class="table table-striped table-bordered table-hover">
-        <thead class="table-primary">
-          <tr>
-            <th class="col-2">Période</th>
-            <th class="col-2">Poste</th>
-            <th>Définition</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>2021 - 2023</th>
-            <th>Géotechnicien, <div class="fw-normal">ALIOS Ingénierie - VALENCE (26)</div>
-            </th>
-            <th class="fw-normal">
-            </thclass>Technicien dans un bureau d'étude en géotechnique mes missions sont : <ul>
-              <li>La création de supports numériques de travail ;</li>
-              <li>Produire des rapports à destination des experts d'assurance, maîtres d'ouvrages,... ;</li>
-              <li>R&D de systèmes pour l’optimisation des méthodes de travail ;</li>
-              <li>Amélioration des processus de l’entreprise à travers la création de modèle de rapport ;</li>
-              <li>Recherche documentaire sur des bâtiments ou des structures pour des projets de travaux.</li>
-            </ul>
-          </th>
-        </tr>
-        <tr>
-          <th>2015 - 2023</th>
-          <th>Géomaticien, <div class="fw-normal">Freelance</div>
-          </th>
-          <th class="fw-normal">Réalisation de cartes et/ou de supports de travail dans l’environnement QGIS pour des
-            projets personnels
-            et associatifs.</th>
-          </tr>
-          <tr>
-            <th>2015 - 2021</th>
-            <th>Enseignant, <div class="fw-normal">Education nationale</div>
-            </th>
-            <th class="fw-normal">J'ai enseigné les SVT, les Mathématiques, les SPC, la BPH et leurs équivalents dans la
-              nouvelle formule du
-              BAC <ul>
-                <li>Réalisation de cours et de support pédagogiques créatifs en présentiel ou distanciel ;</li>
-                <li>Adaptation aux publics d'âges et d'origines sociales différents.</li>
-              </ul>
-            </th>
-          </tr>
-      </tbody>
-    </table>
-  </div>
-  
-  <div class="container">
-    <h2 class="border-bottom border-primary text-primary">Réalisations Notables</h2>
-    <table class="table table-striped table-bordered table-hover">
-      <thead class="table-primary">
-          <tr>
-            <th class="col-2">Période</th>
-            <th>Contexte</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Avril-Mai 2024</th>
-            <th>Formation au <a href="https://le-campus-numerique.fr/">Campus numérique in the Alps</a></th>
-            <th>Rélisation de ce CV en HTML5 -CSS3 - JS. Les compétences sont des objets dont la réprésentation est gérée par une fonction "CardElement".</th>
-          </tr>
-          <tr>
-            <th>Mars-Avril 2024</th>
-            <th>Formation au <a href="https://le-campus-numerique.fr/">Campus numérique in the Alps</a></th>
-            <th><a href="https://augustinpech.github.io/JS_formation_campus/index.html">J'ai réalisé un site en HTML-CSS-JS. Le site contient quelques jeux et applis simples en POO avec JS.</a></th>
-          </tr>
-          <tr>
-            <th>Juin 2024</th>
-            <th>Dans le cadre d'un projet de recherche en Génétoque</th>
-            <th>Pour un projet de prédiction de cluster de gènes utilisant DeepBGC (application de deep learning servant à prédire des intéractions entre des gènes), j'ai créé un <a href="https://github.com/lupech/DeepBGC">repository GitHub</a> avec une CI. L'environnement de test utilise Python 3.10 et pyTest. Les scripts développés par le biologiqste servent a parser des fichiers de génome complet pour trier certianes données et optimiser les performances de l'application.</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-12 px-4">
-      <h2 class=" border-bottom border-primary text-primary">Hobby</h2>
-      <div class="gap-2 d-flex flex-column justify-content-between align-items-stretch">
-        <div class="small">Bricollage : thermo-électricité & autonomie énergétique</div>
-        <div class="small">Création et test de jeux de société // jeux de rôle</div>
-      </div>
-    </div>
-  </main>
+      </nav>
+    </header>
 
-  <footer class="container-fluid text-white bg-primary" id="footer">
-     <div class="text-center">2023 -
-      <script>document.write(new Date().getFullYear());</script>
-    </div>
-    <div id="contactForm">
-      <a class="btn btn-primary my-2" href="mailto:votreadresse@mail.fr">Contactez-moi par mail</a>
-      <a class="btn btn-primary  my-2" href="tel:01 01 01 01 01">Contactez-moi par téléphone</a>
-    </div>
-  </footer>
+    <main class="container my-2">
+      <div class="d-flex flex-row justify-content-between align-items-stretch">
+        <div
+          class="w-100 d-flex flex-column justify-content-end align-items-start"
+        >
+          <div class="d-flex flex-column w-100">
+            <div
+              class="d-flex flex-column align-items-center border border-primary w-100 px-4 py-1"
+            >
+              <h1 class="text-primary">Devops</h1>
+            </div>
+            <div>PECH Augustin</div>
+          </div>
+        </div>
+        <div class="mx-4 w-md-50 w-25 float-end">
+          <img
+            class="img-fluid rounded"
+            id="IDPic"
+            src="/CV/img/Augustin.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="w-100">
+        <h2 class="border-bottom border-primary text-primary">Formation</h2>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-<script src="/CV/js/cardElement.js"></script>
-<script src="/CV/js/skills.js"></script>
-<script src="/CV/js/achivments.js"></script>
-<script src="/CV/js/contact.js"></script>
+        <div>
+          <b>2023-2025</b> : Formation Dev-Ops, Campus Numérique de Valence
+        </div>
+        <div>
+          <b
+            >2020 -
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </b>
+          : Autoformation, Openclassroom / Youtube
+        </div>
+        <div><b>2021-2022</b> : DU-SIG-AD, UGA-CERMOSEM</div>
+        <div>
+          <b>2009 - 2015</b> : Licence - Master 1 - Master 2 - STU spé
+          Planétologie, Université Paris Saclay
+        </div>
+      </div>
+      <h2 class="border-bottom border-primary text-primary">Compétences</h2>
+      <div
+        class="d-flex flex-row justify-content-center flex-wrap col-12"
+        id="skillsContainer"
+      ></div>
+      <div class="container">
+        <h2 class="border-bottom border-primary text-primary">Expériences</h2>
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-primary">
+            <tr>
+              <th class="col-2">Période</th>
+              <th class="col-2">Poste</th>
+              <th>Définition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>2021 - 2023</th>
+              <th>
+                Géotechnicien,
+                <div class="fw-normal">ALIOS Ingénierie - VALENCE (26)</div>
+              </th>
+              <th class="fw-normal">
+                Technicien dans un bureau d'étude en géotechnique mes missions
+                sont :
+                <ul>
+                  <li>La création de supports numériques de travail ;</li>
+                  <li>
+                    Produire des rapports à destination des experts d'assurance,
+                    maîtres d'ouvrages,... ;
+                  </li>
+                  <li>
+                    R&D de systèmes pour l’optimisation des méthodes de travail
+                    ;
+                  </li>
+                  <li>
+                    Amélioration des processus de l’entreprise à travers la
+                    création de modèle de rapport ;
+                  </li>
+                  <li>
+                    Recherche documentaire sur des bâtiments ou des structures
+                    pour des projets de travaux.
+                  </li>
+                </ul>
+              </th>
+            </tr>
+            <tr>
+              <th>2015 - 2023</th>
+              <th>
+                Géomaticien,
+                <div class="fw-normal">Freelance</div>
+              </th>
+              <th class="fw-normal">
+                Réalisation de cartes et/ou de supports de travail dans
+                l’environnement QGIS pour des projets personnels et associatifs.
+              </th>
+            </tr>
+            <tr>
+              <th>2015 - 2021</th>
+              <th>
+                Enseignant,
+                <div class="fw-normal">Education nationale</div>
+              </th>
+              <th class="fw-normal">
+                J'ai enseigné les SVT, les Mathématiques, les SPC, la BPH et
+                leurs équivalents dans la nouvelle formule du BAC
+                <ul>
+                  <li>
+                    Réalisation de cours et de support pédagogiques créatifs en
+                    présentiel ou distanciel ;
+                  </li>
+                  <li>
+                    Adaptation aux publics d'âges et d'origines sociales
+                    différents.
+                  </li>
+                </ul>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="container">
+        <h2 class="border-bottom border-primary text-primary">
+          Réalisations Notables
+        </h2>
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-primary">
+            <tr>
+              <th class="col-2">Période</th>
+              <th>Contexte</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Avril-Mai 2024</th>
+              <th>
+                Formation au
+                <a href="https://le-campus-numerique.fr/"
+                  >Campus numérique in the Alps</a
+                >
+              </th>
+              <th>
+                Rélisation de ce CV en HTML5 -CSS3 - JS. Les compétences sont
+                des objets dont la réprésentation est gérée par une fonction
+                "CardElement".
+              </th>
+            </tr>
+            <tr>
+              <th>Mars-Avril 2024</th>
+              <th>
+                Formation au
+                <a href="https://le-campus-numerique.fr/"
+                  >Campus numérique in the Alps</a
+                >
+              </th>
+              <th>
+                <a
+                  href="https://augustinpech.github.io/JS_formation_campus/index.html"
+                  >J'ai réalisé un site en HTML-CSS-JS. Le site contient
+                  quelques jeux et applis simples en POO avec JS.</a
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>Juin 2024</th>
+              <th>Dans le cadre d'un projet de recherche en Génétoque</th>
+              <th>
+                Pour un projet de prédiction de cluster de gènes utilisant
+                DeepBGC (application de deep learning servant à prédire des
+                intéractions entre des gènes), j'ai créé un
+                <a href="https://github.com/lupech/DeepBGC"
+                  >repository GitHub</a
+                >
+                avec une CI. L'environnement de test utilise Python 3.10 et
+                pyTest. Les scripts développés par le biologiqste servent a
+                parser des fichiers de génome complet pour trier certianes
+                données et optimiser les performances de l'application.
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-12 px-4">
+        <h2 class="border-bottom border-primary text-primary">Hobby</h2>
+        <div
+          class="gap-2 d-flex flex-column justify-content-between align-items-stretch"
+        >
+          <div class="small">
+            Bricollage : thermo-électricité & autonomie énergétique
+          </div>
+          <div class="small">
+            Création et test de jeux de société // jeux de rôle
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid text-white bg-primary" id="footer">
+      <div class="text-center">
+        2023 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+      <div id="contactForm">
+        <a class="btn btn-primary my-2" href="mailto:votreadresse@mail.fr"
+          >Contactez-moi par mail</a
+        >
+        <a class="btn btn-primary my-2" href="tel:01 01 01 01 01"
+          >Contactez-moi par téléphone</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="/CV/js/cardElement.js"></script>
+  <script src="/CV/js/skills.js"></script>
+  <script src="/CV/js/achivments.js"></script>
+  <script src="/CV/js/contact.js"></script>
 </html>
