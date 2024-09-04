@@ -1,10 +1,8 @@
 name: GitHub Action for CV deployment
 run-name: Linting and deploying the CV to GitHub Pages
 on:
-  [push]
-  # push:
-  #   branches:
-  #     - main
+  push:
+
 jobs:
   linter:
     runs-on: ubuntu-latest
@@ -12,8 +10,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
-          
+          persist-credentials: true  # Keep the token to allow pushing
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -33,6 +31,7 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# build:
   # this CV is an old stuff, from when i was so lame , some refactoring to be able to run "npm run build" would be nice
   deploy:
     runs-on: ubuntu-latest
