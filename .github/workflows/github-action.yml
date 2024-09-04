@@ -4,33 +4,22 @@ on:
   push:
 
 jobs:
-  linter:
+  eslint:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          persist-credentials: true  # Keep the token to allow pushing
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+          node-version: 16
+      - name: ESLint Test
+        uses: AbdulRehman-1/eslint-action@latest
         with:
-          node-version: '14'  # Use the version your project requires
-
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.3
-        with:
-          prettier_options: --write **/*.{js,md}
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "Prettified Code!"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
+          eslint-args: '--ignore-path=.gitignore'
+          eslintrc: false # Set this to true if you want to use your own .eslintrc rules
+          extensions: 'js,jsx,ts,tsx'
+          auto-auto-fix-before-test: false # Set this to true if want to format and fix all the lint issue before testing
+          annotations: true
 # build:
   # this CV is an old stuff, from when i was so lame , some refactoring to be able to run "npm run build" would be nice
   deploy:
