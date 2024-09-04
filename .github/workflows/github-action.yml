@@ -6,16 +6,33 @@ on:
   #   branches:
   #     - main
 jobs:
-  prettier:
+  linter:
     runs-on: ubuntu-latest
     steps:
-      # - name: Check out repository code
-      #   uses: actions/checkout@v4
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Use the version your project requires
+
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
         with:
           prettier_options: --write **/*.{js,md}
-  # build :
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Prettified Code!"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # this CV is an old stuff, from when i was so lame , some refactoring to be able to run "npm run build" would be nice
   deploy:
     runs-on: ubuntu-latest
