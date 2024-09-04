@@ -9,8 +9,8 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
+      # - name: Check out repository code
+      #   uses: actions/checkout@v4
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
         with:
