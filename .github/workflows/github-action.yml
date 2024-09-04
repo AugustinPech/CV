@@ -1,0 +1,33 @@
+name: GitHub Action for CV deployment
+run-name: Linting and deploying the CV to GitHub Pages
+on:
+  push:
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install eslint
+      - name: ESLint Test
+        uses: AbdulRehman-1/eslint-action@latest
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
+          eslint-args: '--ignore-path=.gitignore'
+          eslintrc: false # Set this to true if you want to use your own .eslintrc rules
+          extensions: 'js,jsx,ts,tsx'
+          auto-auto-fix-before-test: false # Set this to true if want to format and fix all the lint issue before testing
+          annotations: true
+# build:
+  # this CV is an old stuff, from when i was so lame , some refactoring to be able to run "npm run build" would be nice
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Check out repository code
+      #   uses: actions/checkout@v4
+      - name: Deploy CV on server
+        run: echo "to do"
+        # run an ansible playbook to deploy the ./CV on the server
