@@ -16,12 +16,12 @@ jobs:
         with:
           prettier_options: --write **/*.{js,md}
   # build :
-  # this CV is an old stuff , some refactoring to be able to run "npm run build" would be nice
+  # this CV is an old stuff, from when i was so lame , some refactoring to be able to run "npm run build" would be nice
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
+      # - name: Check out repository code
+      #   uses: actions/checkout@v4
       - name: Deploy CV on server
         run: echo "to do"
         # run an ansible playbook to deploy the ./CV on the server
